@@ -1,0 +1,70 @@
+.footer {
+    background: #232136;
+    color: #fff;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.rodape span {
+    color: #ff4500;
+    font-weight: 800;
+}
+
+@media (max-width: 815px) {
+    .footer {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section h3 {
+        padding-left: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer section {
+        display: inline-block;
+    }
+    .footer ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .github {
+        border-bottom: 1px solid #000;
+    }
+    .linkedin {
+        border-bottom: 1px solid #0077B5;
+    }
+    .gmail {
+        border-bottom: 1px solid #DB4437;
+    }
+    .rodape span {
+        border-bottom: 1px solid #ff4500;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 469px) {
+    .rodape span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

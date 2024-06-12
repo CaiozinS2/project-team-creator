@@ -1,0 +1,136 @@
+.colaborador {
+    position: relative;
+    width: 280px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.05);
+    margin: 16px;
+}
+
+.colaborador .cabecalho {
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+    height: 104px;
+}
+.colaborador img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+    bottom: -50px;
+}
+
+.colaborador .rodape {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.colaborador .rodape h4 {
+    color: #212121;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 8px 16px 32px 16px;
+}
+
+.colaborador .rodape h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6278F7;
+    margin: auto 16px;
+}
+
+.deletar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+    animation: border-color-change linear infinite 5s;
+    color: #000;
+    cursor: pointer;
+}
+
+.deletar:hover {
+    animation: rotate-border linear infinite 2s, border-change linear infinite 3s;
+}
+
+.favoritar {
+   margin-top: 20px; 
+}
+
+.rodape h4,
+.rodape h5 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@keyframes border-change {
+    0% {
+        border-color: #240c0c;
+        background-color: #b94646;
+    }
+    50% {
+        border-color: #810837;
+        background-color: #810837;
+    }
+    100% {
+        border-color: #800808;
+        background-color: #800808;
+    }
+}
+
+@keyframes rotate-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes border-color-change {
+    0.1% {
+        border-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    15% {
+        border-color: rgb(72, 15, 179);
+        background-color: rgb(72, 15, 179);
+    }
+    30% {
+        border-color: rgb(47, 115, 192);
+        background-color: rgb(47, 115, 192);
+    }
+    45% {
+        border-color: rgb(0, 0, 255);
+        background-color: rgb(0, 0, 255);
+    }
+    60% {
+        border-color: rgb(0, 255, 0);
+        background-color: rgb(0, 255, 0);
+    }
+    75% {
+        border-color: rgb(0, 125, 0);
+        background-color: rgb(0, 125, 0);
+    }
+    90% {
+        border-color: rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+    }
+    100% {
+        border-color: rgb(125, 0, 0);
+        background-color: rgb(125, 0, 0);
+    }
+  }
+
+
+@media (max-width: 375px) {
+    .colaborador {
+        width: 75%;
+    }
+}

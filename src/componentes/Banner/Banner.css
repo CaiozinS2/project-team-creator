@@ -1,0 +1,34 @@
+.banner {
+    background-color: #232136;
+    text-align: center;
+    max-width: 100%;
+}
+
+.mobile {
+    background-color: #232136;
+    max-width: 100%;
+    visibility: hidden;
+    display: none;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+@media (max-width: 815px) {
+    .banner {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        visibility: visible;
+    }
+
+    .mobile img {
+        text-align: center;
+        max-width: 100%;
+    }
+} 
