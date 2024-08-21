@@ -6,7 +6,7 @@ const Rodape = () => {
             <section>
                 <ul>
                     <li className='github'>
-                        <a target='_blank' href='https://github.com/CaiozinS2' rel="noopener noreferrer">
+                        <a target='_blank' href='https://github.com/CaiooAnderson' rel="noopener noreferrer">
                             <img src='imagens/gh.png' alt='logo github'/>
                         </a>
                     </li>
